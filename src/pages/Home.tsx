@@ -155,8 +155,9 @@ export default function Home() {
             initial={{ scale: 1.1, opacity: 0 }}
             animate={{ scale: 1, opacity: 0.7 }}
             transition={{ duration: 2, ease: "easeOut" }}
-            src="https://www.pexels.com/photo/36868653/"
+            src="/profile.png"
             alt="Hero"
+            referrerPolicy="no-referrer"
             className="w-full h-full object-cover hover:scale-105 transition-all duration-1000"
           />
         </div>
@@ -208,8 +209,9 @@ export default function Home() {
               className="relative aspect-[3/4] overflow-hidden border border-white/10"
             >
               <img 
-                src="https://unsplash.com/photos/young-man-in-a-bomber-jacket-at-a-convenience-store-M0YuRWWGKJg" 
+                src="https://images.unsplash.com/photo-1533038590840-1cde6e668a91?auto=format&fit=crop&q=80&w=800" 
                 alt="About" 
+                referrerPolicy="no-referrer"
                 className="w-full h-full object-cover"
               />
             </motion.div>
@@ -302,6 +304,7 @@ export default function Home() {
                         whileHover={{ scale: 1.05 }}
                         src={project.image} 
                         alt={project.title} 
+                        referrerPolicy="no-referrer"
                         className="w-full h-full object-cover"
                       />
                     </div>
@@ -327,6 +330,7 @@ export default function Home() {
               <img 
                 src={img.url} 
                 alt={img.alt} 
+                referrerPolicy="no-referrer"
                 className="w-full h-full object-cover group-hover:scale-105 transition-all duration-1000"
               />
               <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">

@@ -38,6 +38,7 @@ export default function ProjectDetail() {
           transition={{ duration: 2, ease: "easeOut" }}
           src={project.image}
           alt={project.title}
+          referrerPolicy="no-referrer"
           className="w-full h-full object-cover opacity-60"
         />
         <div className="absolute inset-0 flex flex-col justify-center items-center text-center p-6">
@@ -100,7 +101,12 @@ export default function ProjectDetail() {
             viewport={{ once: true }}
             className="w-full aspect-video overflow-hidden border border-white/10"
           >
-            <img src={img} alt={`${project.title} detail ${index + 1}`} className="w-full h-full object-cover" />
+            <img 
+              src={img} 
+              alt={`${project.title} detail ${index + 1}`} 
+              referrerPolicy="no-referrer"
+              className="w-full h-full object-cover" 
+            />
           </motion.div>
         ))}
         
