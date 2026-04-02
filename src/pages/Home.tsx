@@ -155,7 +155,7 @@ export default function Home() {
             initial={{ scale: 1.1, opacity: 0 }}
             animate={{ scale: 1, opacity: 0.7 }}
             transition={{ duration: 2, ease: "easeOut" }}
-            src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=1920"
+            src="https://www.pexels.com/photo/36868653/"
             alt="Hero"
             className="w-full h-full object-cover hover:scale-105 transition-all duration-1000"
           />
