@@ -84,9 +84,35 @@ export default function ProjectDetail() {
             <h2 className="text-3xl md:text-5xl mb-8 leading-tight">
               {project.description}
             </h2>
-            <p className="text-lg md:text-xl text-accent/70 leading-relaxed">
+            <p className="text-lg md:text-xl text-accent/70 leading-relaxed mb-12">
               {project.details.longDescription}
             </p>
+
+            {project.brand === "FELAS" && (
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-12 pt-12 border-t border-white/10">
+                <div>
+                  <h3 className="text-xs uppercase tracking-[0.3em] text-secondary mb-6">Brand Strategy</h3>
+                  <ul className="space-y-4 text-sm text-accent/60">
+                    <li className="flex gap-4"><span className="text-secondary font-bold">Positioning:</span> Bold, underground-style coffee brand for creatives and rebels.</li>
+                    <li className="flex gap-4"><span className="text-secondary font-bold">Personality:</span> Edgy, Minimal but loud, Confident, Slightly rebellious.</li>
+                    <li className="flex gap-4"><span className="text-secondary font-bold">Core Idea:</span> Coffee = Fuel for chaos, creativity, and late nights.</li>
+                  </ul>
+                </div>
+                <div>
+                  <h3 className="text-xs uppercase tracking-[0.3em] text-secondary mb-6">Visual Identity</h3>
+                  <div className="flex gap-4 mb-6">
+                    <div className="w-8 h-8 bg-[#0D0D0D] border border-white/20" title="Black" />
+                    <div className="w-8 h-8 bg-[#3B2A26]" title="Coffee Brown" />
+                    <div className="w-8 h-8 bg-[#F2E8DC]" title="Cream" />
+                    <div className="w-8 h-8 bg-[#39FF14]" title="Neon Green" />
+                    <div className="w-8 h-8 bg-[#C1121F]" title="Deep Red" />
+                  </div>
+                  <p className="text-sm text-accent/60">
+                    <span className="text-secondary font-bold">Tagline:</span> "BREWED FOR THE BOLD."
+                  </p>
+                </div>
+              </div>
+            )}
           </div>
         </div>
       </section>
