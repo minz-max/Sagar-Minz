@@ -208,7 +208,7 @@ export default function Home() {
               className="relative aspect-[3/4] overflow-hidden border border-white/10"
             >
               <img 
-                src="https://images.unsplash.com/photo-1533038590840-1cde6e668a91?auto=format&fit=crop&q=80&w=800" 
+                src="https://unsplash.com/photos/young-man-in-a-bomber-jacket-at-a-convenience-store-M0YuRWWGKJg" 
                 alt="About" 
                 className="w-full h-full object-cover"
               />
